@@ -5,7 +5,7 @@ Provides 4-(or requested)-length random character suffix.
 ## Usage
 
 ```terraform
-module "main_vpc" {
+module "suffix" {
   source = "github.com/terraform-training/public-modules//suffix?ref=main"
   suffix_length = 3
 }
