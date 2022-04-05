@@ -3,3 +3,23 @@ variable "suffix_length" {
   type        = number
   default     = 4
 }
+
+variable "use_specials" {
+  type    = bool
+  default = false
+}
+
+variable "use_upper" {
+  type    = bool
+  default = false
+}
+
+variable "min_lower" {
+  type    = number
+  default = 2
+}
+
+variable "override" {
+  type    = string
+  default = null
+}

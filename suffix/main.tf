@@ -1,6 +1,6 @@
 resource "random_string" "suffix" {
   length    = var.suffix_length
-  special   = false
-  upper     = false
-  min_lower = 2
+  special   = var.use_specials
+  upper     = var.use_upper
+  min_lower = var.min_lower
 }
