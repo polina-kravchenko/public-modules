@@ -9,7 +9,7 @@ variable "algorithm" {
   default = "RSA"
 
   validation {
-    condition     = anytrue([var.algorithm == "RSA", var.algorithm == "ED25519", var.algorithm == "ECDSA"])
+    condition     = contains(["RSA", "ED25519", "ECDSA"], var.algorithm)
     error_message = "Algorithm needs to be a valid type."
   }
 }
